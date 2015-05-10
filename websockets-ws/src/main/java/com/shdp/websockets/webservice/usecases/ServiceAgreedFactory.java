@@ -17,7 +17,7 @@ import com.shdp.websockets.webservice.usecases.ws1.ProcessClientRespWS1;
 import com.shdp.websockets.webservice.usecases.ws1.ReqWS1;
 import com.shdp.websockets.webservice.usecases.ws1.ServiceAgreedWS1Asyncr;
 import com.shdp.websockets.webservice.usecases.ws1.ServiceAgreedWS1Sync;
-import com.shdp.websockets.webservice.usecases.ws1.ServiceAgrredWS1OneWay;
+import com.shdp.websockets.webservice.usecases.ws1.ServiceAgreeddWS1OneWay;
 
 @SuppressWarnings({ "rawtypes", "unchecked" })
 public class ServiceAgreedFactory {
@@ -78,7 +78,7 @@ public class ServiceAgreedFactory {
 	cliReq11.setReqStr1("StrRequest11-xxxxYzz"+longId);
 	cliReq11.setCurStr("CurSt"+longId);
 	cliReq11.setReqRespIdLong(longId);
-	ServiceAgreementOneWayIF serviceDefinitionAnn11Cli = new ServiceAgrredWS1OneWay() ;
+	ServiceAgreementOneWayIF serviceDefinitionAnn11Cli = new ServiceAgreeddWS1OneWay() ;
 	serviceDefinitionAnn11Cli.setServiceURL(servURL);
 	serviceDefinitionAnn11Cli.setRequest(cliReq11);
 	
