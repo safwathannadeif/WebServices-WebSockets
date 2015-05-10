@@ -1,4 +1,4 @@
-Webserweb over WebSockets protocol
+Webserweb over WebSockets protocol 
 
 WebSockets as a transport protocol for WebServices offers a better alternative compared to SOAP and REST.
 The Client server can exchange messages at high frequency and with low latency over websockets. 
