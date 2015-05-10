@@ -16,7 +16,7 @@ Asynchronous: Send, and let the Response make the callback for the Instance Obje
 The Response will be processed by a new thread obtained from the thread pool. Implements ServiceAgreementASyncrsIF. See ServiceAgreedWS1Asyncr as a template.
 
 One-way: Send and forget it. The caller is not interested in a response or the server execution works as an event processor. 
-     Implements ServiceAgreementOneWayIF. See ServiceAgrredWS1OneWay as a template.
+     Implements ServiceAgreementOneWayIF. See ServiceAgreedWS1OneWay as a template.
 
 Optimum Usage for Client Sessions:
 
@@ -40,11 +40,11 @@ Json Jackson Library is used to convert the Request and the Response from Text t
 The Default Request and Response Json conversion can be controlled through the Annotation provided in the Request and Response classes.
 
 Environment:
-Eclipse (Luna Service Release 2 (4.4.2)), jdk8_u60ae, Reference Implementation tyrus(Client API), jackson-mapper, and Jboss/WildFly-8.2.0.Final
+Eclipse (Luna Service Release 2 (4.4.2)), jdk8_u60ae, Reference Implementation tyrus(Client API), jackson-mapper,apache-maven-3.1, and Jboss/WildFly-8.2.0.Final
 The pom includes the versions of these Libraries.
 
 Tested Cases:
-WildFly/Client to WildFly/Server and Stand-alone Java Client t Application to WildFly/Server.
+WildFly/Client to WildFly/Server and Stand-alone Java Client Application to WildFly/Server.
 
 Properties:
 Java logging API is in place to capture the in/out Messages for both sides.  The Log Names are specified in: 
