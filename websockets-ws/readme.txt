@@ -1,4 +1,4 @@
-Webserweb over WebSockets protocol
+Webserweb over WebSockets protocol  
 WebSockets as a transport protocol for WebServices offers a better alternative compared to SOAP and REST.
 The Client server can exchange the messages at high frequency and with low latency over the websockets. 
 This example shows generic framework WebServices Java implementation using the websockets.
@@ -7,7 +7,7 @@ A typical WebService include: POJO Request, POJO Response, Server Processor Comp
 Any webservice should implements the "ServiceAgreementIF" interface which include the definitions of these Components.
 Processing Modes: Synchronous, Asynchronous or One-way. 
 	Synchronous: Send Request, and the caller thread forced to Wait the Response[block]. The Return Response will resume the caller thread  via the call back mechanism.
-	 Implements ServiceAgreementSyncIF. See ServiceAgreedWS1Sync as atemplate
+	 Implements ServiceAgreementSyncIF. See ServiceAgreedWS1Sync as a template
 	Asynchronous: basically,  non-blocking event-driven model. Send, and let the Response make the callback for the Instance Object [processClientResp] without blocking. The calling thread will be free after calling the webservice.
 	 The Response will be processed by a new thread grabed from the thread pool.  
 	 Implements ServiceAgreementASyncrsIF. See ServiceAgreedWS1Asyncr as a template.
@@ -70,7 +70,7 @@ Employee WebServices Use Case Step by Step [com.shdp.websockets.webservice.useca
 - The "threadPoolExecutorTstCli" is used by Client side to push the Conureency level for testing purpose
 - After any run, Look at the Client and Server logs to verify the Sessions vs URL, and Request Response corrleation via the identfier "reqRespLinkStrId". 
 
-If you have Question please don’t hesitated to send e-mail to "safwatdeif@gmail.com"
+If you have Question please donï¿½t hesitated to send e-mail to "safwatdeif@gmail.com"
 Thanks,
 Safwat Hanna Deif
 
